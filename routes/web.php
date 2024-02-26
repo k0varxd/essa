@@ -19,6 +19,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/hello/{name}', [HelloControler::class, 'index']);
+Route::get('blog', [App\Http\Controllers\BlogController::class, 'index']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
